@@ -1,9 +1,17 @@
 services:
 
   db:
-    image: postgres
+    image: postgres:lastest
     ports:
       - "5432:5432"
     restart: always
     environment:
       POSTGRES_PASSWORD: thisisatest
+
+
+
+  adminer:
+    image: adminer:lastest
+    restart: always
+    ports:
+      - 8888:8080
