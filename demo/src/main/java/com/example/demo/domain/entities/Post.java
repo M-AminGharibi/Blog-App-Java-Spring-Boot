@@ -7,8 +7,7 @@ import lombok.*;
 import org.springframework.data.annotation.CreatedBy;
 
 import java.time.LocalDateTime;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 @Table(name = "posts")
@@ -40,9 +39,22 @@ public class Post {
     private Integer readingTime;
 
 
-    @ManyToOne
-    @JoinColumn(name = "author_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_id", nullable = false)
     private User author;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
+
+    @ManyToMany
+    @JoinTable(
+            name = "post_tags",
+            joinColumns = @JoinColumn(name = "post_id"),
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
+    )
+    private Set<Tag> tags = new HashSet<>();
+
 
 
     @Column(nullable = false)
@@ -66,7 +78,7 @@ public class Post {
     }
 
     @PrePersist
-    protected void onCreate(){
+    protected void onCreate() {
         LocalDateTime now = LocalDateTime.now();
         this.createAt = now;
         this.updateAt = now;
@@ -74,10 +86,9 @@ public class Post {
 
 
     @PreUpdate
-    protected void onUpdate(){
+    protected void onUpdate() {
         this.updateAt = LocalDateTime.now();
     }
-
 
 
 }
