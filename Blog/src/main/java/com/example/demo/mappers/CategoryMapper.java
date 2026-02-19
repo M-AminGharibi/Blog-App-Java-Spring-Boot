@@ -17,10 +17,10 @@ public interface CategoryMapper {
     CategoryDto toDto(Category category);
 
 
-    default long calculatePostCount(List<Post> posts){
-
-
-
-    }
+//    default long calculatePostCount(List<Post> posts){
+//
+//
+//
+//    }
 
 }
