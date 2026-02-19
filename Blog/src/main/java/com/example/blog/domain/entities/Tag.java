@@ -1,22 +1,18 @@
-package com.example.demo.domain.entities;
-
+package com.example.blog.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
-@Table(name = "categories")
+@Table(name = "tags")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @Builder
-public class Category {
+public class Tag {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -26,16 +22,15 @@ public class Category {
     @Column(nullable = false, unique = true)
     private String name;
 
-
-    @OneToMany(mappedBy = "category")
-    private List<Post> posts = new ArrayList<>();
+    @ManyToMany(mappedBy = "tags")
+    private Set<Post> posts = new HashSet<>();
 
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Category category = (Category) o;
-        return Objects.equals(id, category.id) && Objects.equals(name, category.name);
+        Tag tag = (Tag) o;
+        return Objects.equals(id, tag.id) && Objects.equals(name, tag.name);
     }
 
     @Override

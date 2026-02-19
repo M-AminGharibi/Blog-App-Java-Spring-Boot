@@ -1,9 +1,10 @@
-package com.example.demo.controllers;
+package com.example.blog.controllers;
 
 
-import com.example.demo.domain.dtos.CategoryDto;
-import com.example.demo.domain.entities.Category;
-import com.example.demo.services.CategoryService;
+
+import com.example.blog.domain.dtos.CategoryDto;
+import com.example.blog.domain.entities.Category;
+import com.example.blog.services.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,11 +22,11 @@ public class CategoryController {
     private final CategoryService categoryService;
 
 
-    @GetMapping
-    public ResponseEntity<List<CategoryDto>> listCategories(){
-        List<Category> categoriesEntity = categoryService.listCategories();
-
-    }
+//    @GetMapping
+//    public ResponseEntity<List<CategoryDto>> listCategories(){
+//        List<Category> categoriesEntity = categoryService.listCategories();
+//
+//    }
 
 
 

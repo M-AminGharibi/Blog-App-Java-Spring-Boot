@@ -1,9 +1,9 @@
-package com.example.demo.mappers;
+package com.example.blog.mappers;
 
 
-import com.example.demo.domain.dtos.CategoryDto;
-import com.example.demo.domain.entities.Category;
-import com.example.demo.domain.entities.Post;
+
+import com.example.blog.domain.dtos.CategoryDto;
+import com.example.blog.domain.entities.Category;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;

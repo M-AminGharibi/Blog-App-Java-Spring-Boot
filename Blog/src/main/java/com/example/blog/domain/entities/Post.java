@@ -1,13 +1,15 @@
-package com.example.demo.domain.entities;
+package com.example.blog.domain.entities;
 
 
-import com.example.demo.domain.PostStatus;
+import com.example.blog.domain.PostStatus;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.CreatedBy;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+import java.util.UUID;
 
 @Entity
 @Table(name = "posts")

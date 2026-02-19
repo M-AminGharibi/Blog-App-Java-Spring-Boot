@@ -1,8 +1,8 @@
-package com.example.demo.services.impl;
+package com.example.blog.services.impl;
 
-import com.example.demo.domain.entities.Category;
-import com.example.demo.repositories.CategoryRepository;
-import com.example.demo.services.CategoryService;
+import com.example.blog.domain.entities.Category;
+import com.example.blog.repositories.CategoryRepository;
+import com.example.blog.services.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,8 @@
-package com.example.demo.services;
+package com.example.blog.services;
 
 
-import com.example.demo.domain.entities.Category;
+
+import com.example.blog.domain.entities.Category;
 
 import java.util.List;
 

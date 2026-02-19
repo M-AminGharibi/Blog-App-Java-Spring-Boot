@@ -1,12 +1,13 @@
-package com.example.demo.repositories;
+package com.example.blog.repositories;
 
 
-import com.example.demo.domain.entities.Post;
+
+import com.example.blog.domain.entities.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
 @Repository
-public interface PostRepository extends JpaRepository<Post, UUID> {
+public interface TagRepository extends JpaRepository<Tag, UUID> {
 }
