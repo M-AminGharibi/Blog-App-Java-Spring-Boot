@@ -122,6 +122,15 @@ PostgreSQL used for Production/Dev.
 
 ---
 
+## 🗄 Database
+
+- Relational database integration via JPA
+- Entity relationships
+- Transaction-safe operations
+- ACID-compliant data consistency
+
+---
+
 # 📈 Backend Skills Demonstrated
 
 - Designing RESTful APIs
@@ -141,6 +150,8 @@ PostgreSQL used for Production/Dev.
 - Clean code and maintainability
 
 - Production-style backend structure
+
+- Transactional data management
 
 ---
 
