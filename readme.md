@@ -4,7 +4,7 @@ A production-style Blog Platform REST API built with **Spring Boot**, demonstrat
 
 This project reflects intermediate-to-advanced backend engineering practices suitable for real-world applications and backend developer positions.
 
----
+
 
 # 📌 Project Overview
 
@@ -22,7 +22,7 @@ The Blog Platform API provides:
 
 The application follows clean architectural principles to ensure maintainability, scalability, and separation of concerns.
 
----
+
 
 # 🧱 Architecture
 
@@ -59,8 +59,6 @@ The application follows clean architectural principles to ensure maintainability
 
 
 
----
-
 ## Architectural Principles Applied
 
 - Layered Architecture
@@ -74,7 +72,7 @@ The application follows clean architectural principles to ensure maintainability
 - Validation Layer
 - Secure password handling
 
----
+
 
 
 
@@ -155,13 +153,6 @@ The application follows clean architectural principles to ensure maintainability
 
 
 
-
----
-
-
-
-
-
 # 🔐 Security
 
 - Spring Security integration
@@ -178,7 +169,7 @@ Client → AuthController → AuthenticationManager
 → Authentication Response → Client
 
 
----
+
 
 # 🛠 Technologies Used
 
@@ -202,7 +193,7 @@ Client → AuthController → AuthenticationManager
 H2 in memory database used for Testing.
 PostgreSQL used for Production/Dev.
 
----
+
 
 # 🗄 Database
 
@@ -211,7 +202,7 @@ PostgreSQL used for Production/Dev.
 - Transaction-safe operations
 - ACID-compliant data consistency
 
----
+
 
 # 📈 Backend Skills Demonstrated
 
@@ -235,7 +226,7 @@ PostgreSQL used for Production/Dev.
 
 - Transactional data management
 
----
+
 
 # 🚀 Potential Enhancements
 
@@ -253,7 +244,7 @@ PostgreSQL used for Production/Dev.
 
 - Audit logging
 
----
+
 
 ## 👨‍💻 Author
 
