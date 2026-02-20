@@ -79,6 +79,88 @@ The application follows clean architectural principles to ensure maintainability
 
 
 
+#  What This Project Demonstrates
+
+## 1️⃣ REST API Design
+
+- Proper HTTP methods (GET, POST, PUT, DELETE)
+
+- Status codes (200, 201, 400, 404, etc.)
+
+- Path variables & query parameters
+
+- Pagination & sorting
+
+## 2️⃣ Data Layer
+
+- JPA Entity modeling
+
+- Entity relationships (e.g., Post ↔ Category)
+
+- Database normalization
+
+- Spring Data JPA repositories
+
+- Custom query methods
+
+## 3️⃣ DTO & Mapping Layer
+
+- Separation of internal entities from API responses
+
+- Mapping between Entity and DTO
+
+- Clean API contracts
+
+- Reduced data exposure
+
+## 4️⃣ Validation
+
+- @Valid
+
+- @NotNull, @Size, etc.
+
+- Field-level validation
+
+- Error response handling
+
+## 5️⃣ Exception Handling
+
+- Custom exceptions
+
+- Global exception handler using @ControllerAdvice
+
+- Structured error responses
+
+## 6️⃣ Authentication & Security (if implemented)
+
+- Spring Security integration
+
+- User registration
+
+- Role-based authorization
+
+- Password encryption
+
+## 7️⃣ Clean Code Practices
+
+- Constructor-based dependency injection
+
+- Interface-driven service layer
+
+- Clear naming conventions
+
+- Consistent package structure
+
+
+
+
+
+
+---
+
+
+
+
 
 # 🔐 Security
 
@@ -89,7 +171,7 @@ The application follows clean architectural principles to ensure maintainability
 - Secure authentication flow
 
 
-# Authentication flow:
+## Authentication flow:
 
 Client → AuthController → AuthenticationManager
 → UserDetailsService → Database
@@ -98,7 +180,7 @@ Client → AuthController → AuthenticationManager
 
 ---
 
-## 🛠 Technologies Used
+# 🛠 Technologies Used
 
 | Technology        | Purpose                        |
 |-------------------|--------------------------------|
@@ -122,7 +204,7 @@ PostgreSQL used for Production/Dev.
 
 ---
 
-## 🗄 Database
+# 🗄 Database
 
 - Relational database integration via JPA
 - Entity relationships
@@ -157,8 +239,6 @@ PostgreSQL used for Production/Dev.
 
 # 🚀 Potential Enhancements
 
-- JWT refresh tokens
-
 - Redis caching
 
 - Docker containerization
@@ -172,3 +252,10 @@ PostgreSQL used for Production/Dev.
 - Rate limiting
 
 - Audit logging
+
+---
+
+## 👨‍💻 Author
+
+M.Amin Gharibi  
+Junior Backend Developer – Java & Spring Boot
